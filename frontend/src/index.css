@@ -128,3 +128,22 @@
     @apply font-sans;
     }
 }
+
+.admin-card article{
+  height: 12rem;
+  width: 18rem;
+  border-radius: .4rem; 
+  padding: 1rem;
+  border: 2px solid black;
+}
+.admin-card span{
+  font-size: 4rem;
+  font-weight: 600;
+  display: block;
+}
+
+.layout Link{
+  background-color: red;
+  border-radius: .4rem;
+
+}

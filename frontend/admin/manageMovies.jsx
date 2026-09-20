@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Movies() {
+function manageMovies() {
   return (
-    <div>Movies</div>
+    <div>manageMovies</div>
   )
 }
 
-export default Movies
+export default manageMovies

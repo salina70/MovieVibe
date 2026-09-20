@@ -34,7 +34,7 @@ export function ForgotPassword() {
   };
 
   return (
-    <main className="min-h-screen w-full bg-gray-800 flex items-center justify-center">
+    <main className="min-h-screen w-full bg-black flex items-center justify-center">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <CardTitle>Forgot your password?</CardTitle>
@@ -75,7 +75,7 @@ export function ForgotPassword() {
             to="/login"
             className="text-sm underline-offset-4 hover:text-red-700"
           >
-            <i class="fa-solid fa-left-long"></i> Back to Login
+            <i className="fa-solid fa-left-long"></i> Back to Login
           </Link>
         </CardFooter>
       </Card>

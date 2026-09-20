@@ -68,7 +68,7 @@ console.log(e.key)
     try{
 const data = await axios.post("http://localhost:8000/api/auth/register",
   {
-    name:formdata.name,
+    name:formData.name,
     email:formdata.email,
     password:formdata.password
   }
@@ -80,7 +80,7 @@ console.log(data)
  }
   }
   return (
-    <div className="min-h-screen w-full flex items-center bg-gray-800 justify-center">
+    <div className="min-h-screen w-full flex items-center bg-black justify-center">
       <Card className={`w-full max-w-sm ${selectedSpacing?.className}`}>
                       <Link className="ml-2 text-gray-500" to="/"><i className="fa-solid fa-left-long"></i> back to home</Link>
         

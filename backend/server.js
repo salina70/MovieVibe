@@ -6,6 +6,7 @@ import cookieparser from "cookie-parser";
 import { errorHandler } from "./middleware/errorHandler.js";
 import movieRouter from "./routes/movieRoute.js";
 import authRouter from "./routes/authRoutes.js";
+import { getAdminData } from "./controllers/adminController.js";
 
 dotenv.config();
 
@@ -27,7 +28,7 @@ app.use("/upload", express.static("upload"));
 
 app.use("/api/auth", authRouter )
 app.use("/api/movies", movieRouter  )
-
+app.use("/api/admin/", getAdminData )
 
 app.use(errorHandler);
 

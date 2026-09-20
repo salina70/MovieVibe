@@ -45,7 +45,7 @@ export function Login() {
   );
 
   return (
-    <main className="min-h-screen w-full flex items-center bg-gray-800 justify-center">
+    <main className="min-h-screen w-full flex items-center bg-black justify-center">
       <Card className={`w-full max-w-sm ${selectedSpacing?.className}`}>
               <Link className="ml-2 text-gray-500" to="/"><i className="fa-solid fa-left-long"></i> back to home</Link>
 

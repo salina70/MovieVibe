@@ -9,7 +9,12 @@ import ForgotPassword from "./pages/ForgotPassword.jsx";
 import Movies from "./pages/Movies.jsx";
 import MovieDetails from "./pages/MovieDetails";
 import NotFound from "./pages/NotFound";
-import AdminDashboard from "./pages/AdminDashboard";
+import AdminLayout from "../admin/AdminLayout.jsx";
+import AdminDashboard from "../admin/AdminDashboard.jsx";
+import ManageGenres from "../admin/ManageGenres";
+import ManageUsers from "../admin/ManageUsers";
+import ManageRatings from "../admin/ManageRatings";
+import ManageActors from "../admin/ManageActors";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -26,6 +31,14 @@ createRoot(document.getElementById("root")).render(
 />
 <Route path="*" element={<NotFound/>} />
 
+<Route path="/admin" element={<AdminLayout/>}>
+<Route path="dashboard" element={<AdminDashboard/>} />
+<Route path="movies" element={<manageMovies/>} />
+<Route path="ratings" element={<ManageRatings/>} />
+<Route path="genres" element={<ManageGenres/>} />
+<Route path="users" element={<ManageUsers/>} />
+<Route path="actors" element={<ManageActors/>} />
+</Route>
 
 <Route>
   <Route  />
